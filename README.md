@@ -1,6 +1,6 @@
-### Hi, I'm Renildo, Freelancer since 2019 👋🏽
+### Hi, I'm Renildo. I've been a freelancer since 2019. 👋🏽
 
-Freelancer who loves experimenting with new technologies, and interactive web applications.
+I'm a freelancer who loves trying out new technologies and interactive web applications.
 
 - ✍🏽 Owner of [rrenildopereiraa](https://github.com/rrenildopereiraa) on GitHub.
 - 💻 I'm currently maintaining:
