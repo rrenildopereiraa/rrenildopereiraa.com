@@ -11,22 +11,22 @@ import { baseUrl } from "./sitemap";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Renildo | Freelancer",
-    template: "%s | Renildo | Freelancer",
+    default: "Renildo | Developer experience at Yumma CSS",
+    template: "%s | Renildo | Developer experience at Yumma CSS",
   },
   description:
     "Creator of Yumma CSS. Freelancer maintaining and developing Yumma CSS projects.",
   openGraph: {
-    title: "Renildo",
+    title: "Renildo | Developer experience at Yumma CSS",
     description:
       "Creator of Yumma CSS. Freelancer maintaining and developing Yumma CSS projects.",
     url: baseUrl,
-    siteName: "Renildo",
+    siteName: "Renildo | Developer experience at Yumma CSS",
     locale: "en_US",
     type: "website",
     images: [
       {
-        url: "https://renildo.vercel.com/og.png",
+        url: "https://rrenildopereiraa.vercel.app/og.png",
       },
     ],
   },
