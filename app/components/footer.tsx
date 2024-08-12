@@ -24,10 +24,10 @@ export default function Footer() {
             className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
             rel="noopener noreferrer"
             target="_blank"
-            href="/rss"
+            href="https://x.com/rrenildoo"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">rss</p>
+            <p className="ml-2 h-7">Twitter</p>
           </a>
         </li>
         <li>
@@ -38,7 +38,18 @@ export default function Footer() {
             href="https://github.com/rrenildopereiraa"
           >
             <ArrowIcon />
-            <p className="ml-2 h-7">github</p>
+            <p className="ml-2 h-7">GitHub</p>
+          </a>
+        </li>
+        <li>
+          <a
+            className="flex items-center transition-all hover:text-neutral-800 dark:hover:text-neutral-100"
+            rel="noopener noreferrer"
+            target="_blank"
+            href="/rss"
+          >
+            <ArrowIcon />
+            <p className="ml-2 h-7">RSS</p>
           </a>
         </li>
       </ul>
@@ -46,5 +57,5 @@ export default function Footer() {
         © {new Date().getFullYear()} MIT Licensed
       </p>
     </footer>
-  )
+  );
 }
