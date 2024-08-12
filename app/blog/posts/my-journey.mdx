@@ -1,32 +1,41 @@
 ---
 title: 'My jorney — Yumma CSS'
 publishedAt: '2024-07-26'
-summary: 'It's a pleasure to meet you all!'
+summary: 'Over the past four years, I've been learning how to build full, interactive and modern web applications using regular CSS and Node.js. I started with regular CSS and then moved on to popular frameworks like [Bootstrap](https://getbootstrap.com) and [Tailwind CSS](https://tailwindcss.com/). If you're familiar with these frameworks, you'll know how tricky it can be to debug your codebase.'
 ---
 
-I've been learning and experimenting with a lot of web technologies, and I've decided to focus on web apps. I started with Bootstrap and then slowly started using Tailwind CSS. I really liked both, but there was one problem: the amount of lines of code. Since the end of 2023, I've decided to create my own CSS library called Yumma CSS, just for fun. It promises to create web pages without compromising on large code sizes in the markup.
+Over the past four years, I've been learning how to build full, interactive and modern web applications using regular CSS and Node.js. I started with regular CSS and then moved on to popular frameworks like [Bootstrap](https://getbootstrap.com) and [Tailwind CSS](https://tailwindcss.com/). If you're familiar with these frameworks, you'll know how tricky it can be to debug your codebase.
 
-## Small and concise class names
+## The philosophy behind Yumma CSS
 
-The main difference between Tailwind CSS and Yumma CSS is in how they handle class names. Tailwind's class names are pretty straightforward, but I thought we could make the CSS writing process even simpler by making them as short as possible while keeping their meaning.
+[Yumma CSS](https://www.yummacss.com/) makes it much easier to write CSS. It does this by making the CSS as short as possible, while keeping the meaning the same by using abbreviated syntax.
 
+## How does Yumma CSS compare to other Framrworks?
+
+Every Bootstrap or Tailwind CSS project I worked on ended up with far too many selectors in my markups. I got to a point where I was bored with that approach.
+
+## Centering using Flexbox
+
+Let's see how centring with Flexbox fares in these frameworks:
+
+### Bootstrap
+
+```html
+<div class="align-items-center d-flex justify-content-center">...</div>
+```
 
 ### Tailwind CSS
 
 ```html
-<!-- Center content using flexbox -->
 <div class="items-center flex justify-center">...</div>
 ```
 
 ## Yumma CSS
 
 ```html
-<!-- Center content using flexbox -->
 <div class="ai-c d-f jc-c">...</div>
 ```
 
-There is more I want o talk about Yumma CSS
+## Main concepts
 
-## Conclusion
-
-I will keep developing this blog...
+If you're looking to integrate Yumma CSS into a new or existing project, here are a few [key concepts](https://www.yummacss.com/docs/installation#concepts) to keep in mind before making the switch from Bootstrap or Tailwind CSS.

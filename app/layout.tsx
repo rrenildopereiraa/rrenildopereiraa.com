@@ -1,27 +1,34 @@
-import './global.css'
-import type { Metadata } from 'next'
-import { GeistSans } from 'geist/font/sans'
-import { GeistMono } from 'geist/font/mono'
-import { Navbar } from './components/nav'
-import { Analytics } from '@vercel/analytics/react'
-import { SpeedInsights } from '@vercel/speed-insights/next'
-import Footer from './components/footer'
-import { baseUrl } from './sitemap'
+import "./global.css";
+import type { Metadata } from "next";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
+import { Navbar } from "./components/nav";
+import { Analytics } from "@vercel/analytics/react";
+import { SpeedInsights } from "@vercel/speed-insights/next";
+import Footer from "./components/footer";
+import { baseUrl } from "./sitemap";
 
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: 'Renildo Pereira | Freelancer',
-    template: '%s | Renildo Pereira | Freelancer',
+    default: "Renildo | Freelancer",
+    template: "%s | Renildo | Freelancer",
   },
-  description: 'This is my portfolio.',
+  description:
+    "Creator of Yumma CSS. Freelancer maintaining and developing Yumma CSS projects.",
   openGraph: {
-    title: 'My Portfolio',
-    description: 'This is my portfolio.',
+    title: "Renildo",
+    description:
+      "Creator of Yumma CSS. Freelancer maintaining and developing Yumma CSS projects.",
     url: baseUrl,
-    siteName: 'My Portfolio',
-    locale: 'en_US',
-    type: 'website',
+    siteName: "Renildo",
+    locale: "en_US",
+    type: "website",
+    images: [
+      {
+        url: "https://renildo.vercel.com/og.png",
+      },
+    ],
   },
   robots: {
     index: true,
@@ -29,25 +36,25 @@ export const metadata: Metadata = {
     googleBot: {
       index: true,
       follow: true,
-      'max-video-preview': -1,
-      'max-image-preview': 'large',
-      'max-snippet': -1,
+      "max-video-preview": -1,
+      "max-image-preview": "large",
+      "max-snippet": -1,
     },
   },
-}
+};
 
-const cx = (...classes) => classes.filter(Boolean).join(' ')
+const cx = (...classes) => classes.filter(Boolean).join(" ");
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html
       lang="en"
       className={cx(
-        'text-black bg-white dark:text-white dark:bg-[#0e0e0e]',
+        "text-black bg-white dark:text-white dark:bg-[#0e0e0e]",
         GeistSans.variable,
         GeistMono.variable
       )}
@@ -62,5 +69,5 @@ export default function RootLayout({
         </main>
       </body>
     </html>
-  )
+  );
 }
