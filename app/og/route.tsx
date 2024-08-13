@@ -8,11 +8,9 @@ export function GET(request: Request) {
 
   return new ImageResponse(
     (
-      <div tw="flex flex-col w-full h-full items-center justify-center bg-white">
-        <div tw="flex flex-col md:flex-row w-full py-12 px-4 md:items-center justify-between p-8">
-          <h2 tw="flex flex-col text-4xl font-bold tracking-tight text-left">
-            {title}
-          </h2>
+      <div tw="d-f fd-c w-full h-full ai-c jc-c bg-white">
+        <div tw="d-f fd-c md:fd-r w-full py-12 px-4 md:ai-c jc-sb p-8">
+          <h2 tw="d-f fd-c fs-md fw-700 ls-sm ta-l">{title}</h2>
         </div>
       </div>
     ),
