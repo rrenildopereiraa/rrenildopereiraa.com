@@ -22,7 +22,7 @@ export function BlogPosts() {
             href={`/blog/${post.slug}`}
           >
             <div className="w-full d-f fd-c md:fd-r s-x-0 md:s-x-2">
-              <p className="tc-lead w-25 tabular-nums">
+              <p className="tc-lead">
                 {formatDate(post.metadata.publishedAt, false)}
               </p>
               <p className="tc-d-lead-6 ls-sm">{post.metadata.title}</p>
