@@ -30,7 +30,6 @@
   }
 }
 
-/* Unreleased Yumma CSS utility classes */
 .max-w-144 {
   max-width: 36rem;
 }
@@ -56,7 +55,6 @@
 }
 
 .spr-6 {
-  /* 0.25rem (base) * 6 */
   scroll-padding-right: 1.5rem;
 }
 
@@ -64,9 +62,10 @@ html {
   min-width: 360px;
 }
 
-.prose .anchor {
-  @apply absolute invisible no-underline;
-
+.typography .anchor {
+  position: absolute;
+  visibility: hidden;
+  text-decoration-line: none;
   margin-left: -1em;
   padding-right: 0.5em;
   width: 80%;
@@ -75,79 +74,109 @@ html {
 }
 
 .anchor:hover {
-  @apply visible;
+  visibility: visible;
 }
 
-.prose a {
-  @apply underline transition-all decoration-neutral-400 dark:decoration-neutral-600 underline-offset-2 decoration-[0.1em];
+.typography a {
+  text-decoration-line: underline;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  text-decoration-color: #a3a3a3;
+  text-underline-offset: 2px;
+  text-decoration-color: 0.1em;
 }
 
-.prose .anchor:after {
-  @apply text-neutral-300 dark:text-neutral-700;
+.typography .anchor:after {
+  color: #d4d4d4;
   content: '#';
 }
 
-.prose *:hover>.anchor {
-  @apply visible;
+.typography *:hover>.anchor {
+  visibility: visible;
 }
 
-.prose pre {
-  @apply bg-neutral-50 dark:bg-neutral-900 rad-2 overflow-x-auto border border-neutral-200 dark:border-neutral-900 py-2 px-3 fs-sm;
+.typography pre {
+  background-color: #fafafa;
+  overflow-x: auto;
+  border-color: #e5e5e5;
+  font-size: 0.875rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
 }
 
-.prose code {
-  @apply px-1 py-0.5 rad-2;
+.typography code {
+  padding: 0.5rem 1rem;
+  border-radius: 0.25rem;
 }
 
-.prose pre code {
-  @apply p-0;
+.typography pre code {
+  padding: 0px;
   border: initial;
   line-height: 1.5;
 }
 
-.prose code span {
-  @apply font-medium;
+.typography code span {
+  font-weight: 500;
 }
 
-.prose img {
-  /* Don't apply styles to next/image */
-  @apply m-0;
+.typography img {
+  margin: 0px;
 }
 
-.prose p {
-  @apply my-4 text-neutral-800 dark:text-neutral-200;
+.typography p {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  color: #262626;
 }
 
-.prose h1 {
-  @apply text-4xl font-medium ls-sm mt-6 mb-2;
+.typography h1 {
+  font-size: 2.25rem;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.prose h2 {
-  @apply text-xl font-medium ls-sm mt-6 mb-2;
+.typography h2 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.prose h3 {
-  @apply text-xl font-medium ls-sm mt-6 mb-2;
+.typography h3 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.prose h4 {
-  @apply text-lg font-medium ls-sm mt-6 mb-2;
+.typography h4 {
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: -0.025em;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
 }
 
-.prose strong {
-  @apply font-medium;
+.typography strong {
+  font-weight: 500;
 }
 
-.prose ul {
-  @apply list-disc pl-6;
+.typography ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
 }
 
-.prose ol {
-  @apply list-decimal pl-6;
+.typography ol {
+  list-style-type: decimal;
+  padding-left: 1.5rem;
 }
 
-.prose> :first-child {
-  /* Override removing top margin, causing layout shift */
+.typography> :first-child {
   margin-top: 1.25em !important;
   margin-bottom: 1.25em !important;
 }
@@ -158,12 +187,9 @@ pre::-webkit-scrollbar {
 
 pre {
   -ms-overflow-style: none;
-  /* IE and Edge */
   scrollbar-width: none;
-  /* Firefox */
 }
 
-/* Remove Safari input shadow on mobile */
 input[type='text'],
 input[type='email'] {
   -webkit-appearance: none;
