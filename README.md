@@ -11,4 +11,4 @@ I'm a freelancer who loves trying out new technologies and interactive web appli
 
 - 🌱 I'm currently learning Next.js
 - 💬 Ask me anything related to Yumma CSS
-- ⚡ Fun fact: I started Yumma CSS because I wanted to learn CSS
+- ⚡ Fun fact: I started Yumma CSS because I was bored
