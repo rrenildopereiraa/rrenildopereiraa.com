@@ -5,9 +5,9 @@ I'm a freelancer who loves trying out new technologies and interactive web appli
 - ✍🏽 Owner of [rrenildopereiraa](https://github.com/rrenildopereiraa) on GitHub.
 - 💻 I'm currently maintaining:
   - [Yumma CSS](https://github.com/yumma-lib/yumma-css) — Quickly build applications with less code in your markup.
-  - [Yumma CSS Docs](https://www.yummacss.com/) — The documentation site for Yumma CSS.
-  - [Yumma CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=yumma-css.yumma-css-intellisense) — Yumma CSS for Visual Studio Code.
-  - [Yumma CSS Playground](https://play.yummacss.com/) — Yumma CSS playground based on Monaco editor.
+      - [Yumma CSS Docs](https://www.yummacss.com/) — 
+      - [Yumma CSS Intellisense](https://marketplace.visualstudio.com/items?itemName=yumma-css.yumma-css-intellisense) — Yumma CSS for Visual Studio Code.
+      - [Yumma CSS Playground](https://play.yummacss.com/) — Yumma CSS playground based on Monaco editor.
 
 - 🌱 I'm currently learning Next.js
 - 💬 Ask me anything related to Yumma CSS
