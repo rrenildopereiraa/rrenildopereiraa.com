@@ -11,17 +11,17 @@ import { baseUrl } from "./sitemap";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Renildo | Developer experience at Yumma CSS",
-    template: "%s | Renildo | Developer experience at Yumma CSS",
+    default: "Renildo | DX at Yumma CSS",
+    template: "%s | Renildo | DX at Yumma CSS",
   },
   description:
     "Creator of Yumma CSS. Freelancer maintaining and developing Yumma CSS projects.",
   openGraph: {
-    title: "Renildo | Developer experience at Yumma CSS",
+    title: "Renildo | DX at Yumma CSS",
     description:
       "Creator of Yumma CSS. Freelancer maintaining and developing Yumma CSS projects.",
     url: baseUrl,
-    siteName: "Renildo | Developer experience at Yumma CSS",
+    siteName: "Renildo | DX at Yumma CSS",
     locale: "en_US",
     type: "website",
     images: [
