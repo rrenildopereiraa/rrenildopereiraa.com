@@ -9,6 +9,10 @@ I'm a freelancer who loves trying out new technologies and interactive web appli
       - [Yumma Intellisense](https://marketplace.visualstudio.com/items?itemName=yumma-css.yumma-css-intellisense)
       - [Yumma Playground](https://play.yummacss.com/)
 
+  - [Renildo | DX at Yumma CSS](https://rrenildopereiraa.vercel.app/) — My personal website
+ 
+---
+
 - 🌱 I'm currently learning Next.js
 - 💬 Ask me anything related to Yumma CSS
 - ⚡ Fun fact: I started Yumma CSS because I was bored
