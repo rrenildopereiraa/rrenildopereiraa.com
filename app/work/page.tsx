@@ -16,7 +16,12 @@ export default function Page() {
       <div className="my-8">
         <h1 className="fs-lg fw-600 ls-xs">Docs</h1>
         <p className="my-4 tc-l-lead-2">
-          I wrote the documentation for Yumma CSS.
+          I wrote the documentation for{" "}
+          <span>
+            <a className="tc-indigo h:tdl-u" href="https://www.yummacss.com/">
+              Yumma CSS.
+            </a>
+          </span>
         </p>
 
         <Image
