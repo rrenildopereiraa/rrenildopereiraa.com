@@ -77,7 +77,7 @@ export default function Blog({ params }) {
             url: `${baseUrl}/blog/${post.slug}`,
             author: {
               "@type": "Person",
-              name: "Renildo | DX at Yumma CSS",
+              name: "Renildo Pereira | DX at Yumma CSS",
             },
           }),
         }}

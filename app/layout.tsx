@@ -11,8 +11,8 @@ import { baseUrl } from "./sitemap";
 export const metadata: Metadata = {
   metadataBase: new URL(baseUrl),
   title: {
-    default: "Renildo | DX at Yumma CSS",
-    template: "%s | Renildo | DX at Yumma CSS",
+    default: "Renildo Pereira | DX at Yumma CSS",
+    template: "%s | Renildo Pereira | DX at Yumma CSS",
   },
   description:
     "Creator of Yumma CSS. Freelancer maintaining and developing Yumma CSS projects.",
@@ -21,11 +21,11 @@ export const metadata: Metadata = {
     apple: "rrenildopereiraa.vercel.app/apple-icon.png",
   },
   openGraph: {
-    title: "Renildo | DX at Yumma CSS",
+    title: "Renildo Pereira | DX at Yumma CSS",
     description:
       "Creator of Yumma CSS. Freelancer maintaining and developing Yumma CSS projects.",
     url: baseUrl,
-    siteName: "Renildo | DX at Yumma CSS",
+    siteName: "Renildo Pereira | DX at Yumma CSS",
     locale: "en_US",
     type: "website",
     images: [

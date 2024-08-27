@@ -27,7 +27,7 @@ export async function GET() {
   const rssFeed = `<?xml version="1.0" encoding="UTF-8" ?>
   <rss version="2.0">
     <channel>
-        <title>Renildo | DX at Yumma CSS</title>
+        <title>Renildo Pereira | DX at Yumma CSS</title>
         <link>${baseUrl}</link>
         <description>Creator of Yumma CSS. Freelancer maintaining and developing Yumma CSS projects.</description>
         ${itemsXml}
