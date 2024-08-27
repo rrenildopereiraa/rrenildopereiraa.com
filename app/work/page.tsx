@@ -1,6 +1,6 @@
 import Image from "next/image";
-import DocsImg from "../assets/img/docs.png";
-import ShadesImg from "../assets/img/shades.png";
+import DocsImg from "../assets/docs.png";
+import ShadesImg from "../assets/shades.png";
 
 export default function Page() {
   return (
