@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   description:
     "Creator of Yumma CSS. Freelancer maintaining and developing Yumma CSS projects.",
   icons: {
-    icon: "rrenildopereiraa.vercel.app/favicon.ico",
-    apple: "rrenildopereiraa.vercel.app/apple-icon.png",
+    icon: "https://rrenildopereiraa.vercel.app/favicon.ico",
+    apple: "https://rrenildopereiraa.vercel.app/apple-icon.png",
   },
   openGraph: {
     title: "Renildo Pereira | DX at Yumma CSS",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://rrenildopereiraa.vercel.app/og.png",
+        url: "https://https://rrenildopereiraa.vercel.app/og.png",
       },
     ],
   },

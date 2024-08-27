@@ -7,12 +7,12 @@ const navItems = {
   "/blog": {
     name: "Blog",
   },
-  // "/work": {
-  //   name: "Work ",
-  // },
-  // "/about": {
-  //   name: "About ",
-  // },
+  "/work": {
+    name: "Work ",
+  },
+  "/about": {
+    name: "About ",
+  },
 };
 
 export function Navbar() {
@@ -29,7 +29,7 @@ export function Navbar() {
                 <Link
                   key={path}
                   href={path}
-                  className="h:tc-black d-f va-m p-r py-1 px-2 m-1"
+                  className="h:tc-indigo d-f va-m p-r py-1 px-2 m-1 fw-500"
                 >
                   {name}
                 </Link>

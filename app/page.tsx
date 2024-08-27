@@ -8,9 +8,9 @@ export default function Page() {
       </h1>
       <p className="mb-4">
         I am pleased to meet you. At present, I am a web engineer with a focus
-        on products, and I am responsible for leading the development at{" "}
+        on products, and I am responsible for leading the development at
         <span className="fw-600 tc-indigo">
-          <a href="https://yummacss.com">Yumma CSS</a>.
+          <a href="https://yummacss.com"> Yumma CSS</a>.
         </span>
       </p>
       <div className="my-8">

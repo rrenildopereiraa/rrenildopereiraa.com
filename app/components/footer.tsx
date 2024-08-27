@@ -7,7 +7,7 @@ export default function Footer() {
       <ul className="fs-sm mt-8 d-f fd-c s-x-0 tc-lead md:fd-r md:s-x-4">
         <li>
           <a
-            className="d-f ai-c h:tc-black"
+            className="d-f ai-c h:tc-indigo"
             rel="noopener noreferrer"
             target="_blank"
             href="https://twitter.com/rrenildoo"
@@ -18,7 +18,7 @@ export default function Footer() {
         </li>
         <li>
           <a
-            className="d-f ai-c h:tc-black"
+            className="d-f ai-c h:tc-indigo"
             rel="noopener noreferrer"
             target="_blank"
             href="https://github.com/rrenildopereiraa"
@@ -29,7 +29,7 @@ export default function Footer() {
         </li>
         <li>
           <a
-            className="d-f ai-c h:tc-black"
+            className="d-f ai-c h:tc-indigo"
             rel="noopener noreferrer"
             target="_blank"
             href="/rss"
