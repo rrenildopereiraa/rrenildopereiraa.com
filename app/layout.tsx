@@ -16,6 +16,10 @@ export const metadata: Metadata = {
   },
   description:
     "Creator of Yumma CSS. Freelancer maintaining and developing Yumma CSS projects.",
+  icons: {
+    icon: "rrenildopereiraa.vercel.app/favicon.ico",
+    apple: "rrenildopereiraa.vercel.app/apple-icon.png",
+  },
   openGraph: {
     title: "Renildo | DX at Yumma CSS",
     description:
