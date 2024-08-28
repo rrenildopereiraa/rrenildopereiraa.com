@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://https://rrenildopereiraa.vercel.app/og.png",
+        url: "https://rrenildopereiraa.vercel.app/og.png",
       },
     ],
   },
