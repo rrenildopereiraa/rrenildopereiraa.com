@@ -180,6 +180,8 @@ pre::-webkit-scrollbar {
 pre {
   -ms-overflow-style: none;
   scrollbar-width: none;
+  max-height: 600px;
+  overflow: auto;
 }
 
 input[type='text'],

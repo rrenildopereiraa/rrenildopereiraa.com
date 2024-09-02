@@ -1,0 +1,167 @@
+---
+title: 'Yumma CSS - The new alternative to modern CSS Frameworks'
+publishedAt: '2024-09-01'
+summary: ''
+---
+
+If you're familiar with Bootstrap and Tailwind CSS, you know how tough it can be to debug your codebase, especially when you're working on a big application. Honestly, every Bootstrap or Tailwind CSS project I worked on ended up with far too many lines of code, and it got to a point where I got bored with that approach.
+
+How does Yumma CSS Compare?
+
+[Yumma CSS](https://www.yummacss.com/) uses an abbreviated naming convention that’s similar to the regular CSS syntax.
+
+### Centering using Flexbox
+
+Let's see how centering with Flex box fares in these frameworks:
+
+**Using Bootstrap**
+
+```html
+<div class="align-items-center d-flex justify-content-center">...</div>
+```
+
+**Using Tailwind CSS**
+
+```html
+<div class="items-center flex jc-c">...</div>
+```
+
+**Using Yumma CSS**
+
+```html
+<div class="ai-c d-f jc-c">...</div>
+```
+
+## Media queries and variants
+
+Yumma CSS offers a set of pseudo-classes and responsive breakpoints such as _sm:*_, _md:*_, _lg:*_, _xl:*_, and _xxl:*_. This makes it easy to adapt your designs based on screen size and user interactions.
+
+## Building components
+
+Let’s see how Yumma CSS stacks up against Tailwind CSS when building a Card Grid component.
+
+Tailwind CSS Card
+
+```html
+<div class="grid h-screen w-full gap-4 p-6 md:grid-flow-dense md:grid-cols-3 md:grid-rows-3">
+    <div
+        class="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white p-6 shadow-lg md:col-span-1 md:row-span-2">
+        <div class="flex-grow">
+            <h1 class="mb-2 text-2xl font-semibold text-gray-800">
+                Yumma OS 7.2
+            </h1>
+            <p class="mb-4 text-sm text-gray-600">
+                This update has some important bug fixes and also fixes an issue that
+                was preventing users from enabling or disabling Advanced Data Protection.
+            </p>
+            <a class="text-sm text-pink-500 underline" href="/">
+                What's new?
+            </a>
+        </div>
+        <div class="mt-auto flex flex-col space-y-4">
+            <button class="h-12 rounded-md bg-pink-600 px-6 font-semibold text-white">
+                Update Now
+            </button>
+            <button class="h-12 rounded-md border border-gray-200 px-6 font-semibold text-gray-900">
+                Update Tonight
+            </button>
+        </div>
+    </div>
+
+    <div class="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white p-6 shadow-lg md:col-start-2 md:row-start-1">
+        <div class="flex-grow">
+            <h1 class="mb-2 text-2xl font-semibold text-gray-800">
+                Patch 6.2
+            </h1>
+            <p class="mb-4 text-sm text-gray-600">
+                This update fixes security issues. Install it to keep your system safe.
+            </p>
+        </div>
+        <button class="mb-4 mt-auto h-12 rounded-md bg-pink-600 px-6 font-semibold text-white">
+            Update Now
+        </button>
+    </div>
+
+    <div class="flex flex-col overflow-hidden rounded-xl border border-gray-200 bg-white p-6 shadow-lg md:col-start-2 md:row-start-2">
+        <div class="flex-grow">
+            <h1 class="mb-2 text-2xl font-semibold text-gray-800">
+                What's new?
+            </h1>
+            <p class="mb-4 text-sm text-gray-600">
+                Take a look at the new features in the latest release, including better user interface elements and a more stable system.
+            </p>
+            <a class="text-sm text-pink-500 underline" href="/">
+                Learn more
+            </a>
+        </div>
+    </div>
+</div>
+```
+
+Yumma CSS Card
+
+```html
+<div class="d-g h-1/1 w-full g-4 p-6 md:gaf-d md:gtc-3 md:gtr-3">
+    <div class="d-f fd-c ovf-h rad-3 b-1 bc-l-silver-6 bg-white p-6 bs-sm md:gc-s-1 md:gr-s-2">
+        <div class="fg-1">
+            <h1 class="mb-2 fs-xl fw-600 tc-d-lead-2">
+                Yumma OS 7.2
+            </h1>
+            <p class="mb-4 fs-sm tc-l-lead-3">
+                This update has some important bug fixes and also fixes an issue that was preventing users from enabling or disabling Advanced Data Protection.
+            </p>
+            <a class="fs-sm tc-pink tdl-u" href="/">
+                What's new?
+            </a>
+        </div>
+        <div class="mt-auto d-f fd-c s-y-4">
+            <button class="h-12 rad-2 bg-pink px-6 fw-600 tc-white">
+                Update Now
+            </button>
+            <button class="h-12 rad-2 b-1 bc-l-silver-5 px-6 fw-600 tc-lead">
+                Update Tonight
+            </button>
+        </div>
+    </div>
+
+    <div class="d-f fd-c ovf-h rad-3 b-1 bc-l-silver-6 bg-white p-6 bs-sm md:gcs-2 md:grs-1">
+        <div class="fg-1">
+            <h1 class="mb-2 fs-xl fw-600 tc-d-lead-2">
+                Patch 6.2
+            </h1>
+            <p class="mb-4 fs-sm tc-l-lead-3">
+                This update fixes security issues. Install it to keep your system safe.
+            </p>
+        </div>
+        <button class="h-12 rad-2 bg-pink px-6 fw-600 tc-white mt-auto mb-4">
+            Update Now
+        </button>
+    </div>
+
+    <div class="d-f fd-c ovf-h rad-3 b-1 bc-l-silver-6 bg-white p-6 bs-sm md:gcs-2 md:grs-2">
+        <div class="fg-1">
+            <h1 class="mb-2 fs-xl fw-600 tc-d-lead-2">
+                What's new?
+            </h1>
+            <p class="mb-4 fs-sm tc-l-lead-3">
+                Take a look at the new features in the latest release, including better user interface elements and a more stable system.
+            </p>
+            <a class="fs-sm tc-pink tdl-u" href="/">
+                Learn more
+            </a>
+        </div>
+    </div>
+</div>
+```
+
+## Maintainability and scalability
+
+When you're working on a big project, it's really important to be able to maintain your work. That's why we've designed Yumma CSS to be modular and scalable. It's a great choice for applications that use modern frameworks like React or Vue. Its concise class names and organized structure help you keep your styles manageable and your code clean.
+
+![Yumma CSS utilities](https://miro.medium.com/v2/resize:fit:720/format:webp/1*M30kiwtAM6E81xaaFz0EAA.png)
+
+## Conclusion
+
+Yumma CSS is all about keeping things simple and minimalist when it comes to styling. It can really help to cut down on the complexity and verbosity of your code. Its naming conventions and modular design are super concise and make it a great tool for modern web development. Give Yumma CSS a try and see how it can help you work more efficiently on your projects!
+
+[Learn more about Yumma CSS](https://www.yummacss.com/)
