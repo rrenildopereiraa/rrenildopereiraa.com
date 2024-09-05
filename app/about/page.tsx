@@ -9,8 +9,12 @@ export default function Page() {
       <h1 className="mb-8 fs-xl fw-600 ls-xs">About me</h1>
 
       <p className="mb-4 tc-l-lead-2">
-        Hi, I'm Renildo. I'm a Full Stack developer working on Yumma CSS. I love
-        building modern apps that are high-quality and ready to use.
+        Hi, I'm Renildo. For those who don't know me, I'm the creator of Yumma
+        CSS. I've been here since 2019, and I love building modern, high-quality
+        apps. I've worked on a CSS library, written a full and beautiful
+        documentation for it, created a VS Code Intellisense extension, and
+        built a playground. I'm also planning to put together a component
+        library based on my CSS library.
       </p>
 
       <div className="g-4 d-g my-6">
