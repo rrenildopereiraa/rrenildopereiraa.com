@@ -8,9 +8,9 @@ export default function Footer() {
         <li>
           <a
             className="d-f ai-c h:tc-indigo"
+            href="https://twitter.com/rrenildoo"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://twitter.com/rrenildoo"
           >
             <TwitterIcon className="dim-5" />
             <p className="ml-2 h-7">Twitter</p>
@@ -19,9 +19,9 @@ export default function Footer() {
         <li>
           <a
             className="d-f ai-c h:tc-indigo"
+            href="https://github.com/rrenildopereiraa"
             rel="noopener noreferrer"
             target="_blank"
-            href="https://github.com/rrenildopereiraa"
           >
             <GitHubIcon className="dim-5" />
             <p className="ml-2 h-7">GitHub</p>
@@ -30,16 +30,42 @@ export default function Footer() {
         <li>
           <a
             className="d-f ai-c h:tc-indigo"
+            href="/rss"
             rel="noopener noreferrer"
             target="_blank"
-            href="/rss"
           >
             <RssIcon className="dim-5" />
             <p className="ml-2 h-7">RSS</p>
           </a>
         </li>
       </ul>
-      <p className="mt-8 tc-lead">© {new Date().getFullYear()} MIT Licensed</p>
+      <div className="mt-8 tc-lead">
+        <p>
+          This website was built with{" "}
+          <span>
+            <a
+              className="tdl-u"
+              href="https://www.yummacss.com/docs/installation"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Yumma CSS
+            </a>
+          </span>{" "}
+          and{" "}
+          <span>
+            <a
+              className="tdl-u"
+              href="https://nextjs.org/docs/getting-started/installation"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Next.js
+            </a>
+          </span>
+          .
+        </p>
+      </div>
     </footer>
   );
 }
