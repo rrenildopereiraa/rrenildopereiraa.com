@@ -44,7 +44,7 @@ export default function Footer() {
           This website was built with{" "}
           <span>
             <a
-              className="tdl-u"
+              className="h:tc-indigo tdl-u"
               href="https://www.yummacss.com/docs/installation"
               rel="noopener noreferrer"
               target="_blank"
@@ -55,7 +55,7 @@ export default function Footer() {
           and{" "}
           <span>
             <a
-              className="tdl-u"
+              className="h:tc-indigo tdl-u"
               href="https://nextjs.org/docs/getting-started/installation"
               rel="noopener noreferrer"
               target="_blank"
