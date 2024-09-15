@@ -14,7 +14,9 @@ export default function Page() {
           <a href="https://yummacss.com">Yumma CSS</a>.
         </span>
       </p>
+
       <div className="my-8">
+        <h2 className="fs-md fw-600">Latest posts</h2>
         <BlogPosts />
       </div>
     </section>
