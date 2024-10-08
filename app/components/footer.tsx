@@ -41,7 +41,7 @@ export default function Footer() {
       </ul>
       <div className="mt-8 tc-lead">
         <p>
-          This website was built with{" "}
+          Built with{" "}
           <span>
             <a
               className="h:tc-indigo tdl-u"
