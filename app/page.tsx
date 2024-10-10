@@ -7,11 +7,11 @@ export default function Page() {
         Hi, I'm Renildo, Freelancer since 2019 👋🏽
       </h1>
       <p className="mb-4">
-        I am pleased to meet you. At present, I am a web engineer with a focus
-        on products, and I am responsible for leading the development at{" "}
+        Is nice to meet you. At present, I am a web engineer with a focus
+        on development at{" "}
         <span className="fw-600 tc-indigo h:tdl-u">
           {" "}
-          <a href="https://yummacss.com">Yumma CSS</a>.
+          <a href="https://yummacss.com">Yumma CSS Library</a>.
         </span>
       </p>
 
