@@ -1,6 +1,6 @@
 import Image from "next/image";
 import DocsImg from "../assets/docs.png";
-import ShadesImg from "../assets/shades.png";
+import ColorsImg from "../assets/colors.png";
 
 export default function Page() {
   return (
@@ -16,12 +16,14 @@ export default function Page() {
       <div className="my-8">
         <h1 className="fs-lg fw-600 ls-xs">Docs</h1>
         <p className="my-4 tc-l-lead-2">
-          I wrote the documentation for{" "}
+          I put together the documentation for{" "}
           <span>
             <a className="tc-indigo h:tdl-u" href="https://www.yummacss.com/">
               Yumma CSS.
             </a>
-          </span>
+          </span>{" "}
+          It's got all the info you need, from how to install and configure to
+          how to use the free components and advanced utility classes.
         </p>
 
         <Image
@@ -38,7 +40,7 @@ export default function Page() {
         <Image
           alt="Yumma CSS Docs - Color System"
           className="h-auto rad-2 mt-4"
-          src={ShadesImg}
+          src={ColorsImg}
         />
       </div>
     </section>
