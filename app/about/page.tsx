@@ -31,8 +31,7 @@ export default function Page() {
         <span>
           <a
             className="tc-indigo h:tdl-u"
-            href="https://open.spotify.com/playlist/37i9dQZF1DZ06evO0WDjhN?si=b92e7228f0e94bee"
-          >
+            href="https://music.apple.com/pt/artist/renildo-pereira/1747299923">
             instrumental artist
           </a>
         </span>
