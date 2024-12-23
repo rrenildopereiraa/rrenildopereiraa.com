@@ -1,34 +1,30 @@
 import "./global.css";
-import { Analytics } from "@vercel/analytics/react";
-import { baseUrl } from "./sitemap";
+import "./custom.css";
+import type { Metadata } from "next";
+import { GeistSans } from "geist/font/sans";
+import { GeistMono } from "geist/font/mono";
 import { Navbar } from "./components/nav";
+import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Footer from "./components/footer";
-import type { Metadata } from "next";
+import { ThemeProvider } from "./components/theme-switch";
+import { metaData } from "./config";
 
 export const metadata: Metadata = {
-  metadataBase: new URL(baseUrl),
+  metadataBase: new URL(metaData.baseUrl),
   title: {
-    default: "Renildo Pereira | DX at Yumma CSS",
-    template: "%s | Renildo Pereira | DX at Yumma CSS",
+    default: metaData.title,
+    template: `%s | ${metaData.title}`,
   },
-  description: "Creator of Yumma CSS. Freelancer maintaining and developing Yumma CSS projects.",
-  icons: {
-    icon: "https://rrenildopereiraa.vercel.app/favicon.ico",
-    apple: "https://rrenildopereiraa.vercel.app/apple-icon.png",
-  },
+  description: metaData.description,
   openGraph: {
-    title: "Renildo Pereira | DX at Yumma CSS",
-    description: "Creator of Yumma CSS. Freelancer maintaining and developing Yumma CSS projects.",
-    url: baseUrl,
-    siteName: "Renildo Pereira | DX at Yumma CSS",
+    images: metaData.ogImage,
+    title: metaData.title,
+    description: metaData.description,
+    url: metaData.baseUrl,
+    siteName: metaData.name,
     locale: "en_US",
     type: "website",
-    images: [
-      {
-        url: "https://rrenildopereiraa.vercel.app/og.png",
-      },
-    ],
   },
   robots: {
     index: true,
@@ -41,21 +37,36 @@ export const metadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  twitter: {
+    title: metaData.name,
+    card: "summary_large_image",
+  },
+  icons: {
+    icon: "/favicon.ico",
+  },
 };
 
 const cx = (...classes) => classes.filter(Boolean).join(" ");
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className={cx("tc-black bg-white")}>
-      <body className="max-w-144 mx-4 mt-8 lg:mx-auto">
-        <main className="f-auto min-w-0 mt-6 d-f fd-c px-2 md:px-0">
-          <Navbar />
-          {children}
-          <Footer />
-          <Analytics />
-          <SpeedInsights />
-        </main>
+    <html lang="en" className={cx(GeistSans.variable, GeistMono.variable)}>
+      <head>
+        <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS Feed" />
+        <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Atom Feed" />
+        <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yumma-lib/yumma-css@release/dist/yumma.min.css" />
+      </head>
+      <body className="antialiased d-f fd-c ai-c jc-c mx-auto mt-2 lg:mt-8 mb-20 lg:mb-40">
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+          <main className="f-auto min-w-0 mt-2 md:mt-6 d-f fd-c px-6 sm:px-4 md:px-0 max-w-wide w-full">
+            <Navbar />
+            {children}
+            <Footer />
+            <Analytics />
+            <SpeedInsights />
+          </main>
+        </ThemeProvider>
       </body>
     </html>
   );

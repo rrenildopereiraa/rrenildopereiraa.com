@@ -1,57 +1,10 @@
-@import "yummacss/dist/yumma.css";
-@import "./typography.css";
-
-::selection {
-  background-color: hsl(208, 88%, 62%);
-  color: #fefefe;
-}
-
-:root {
-  --sh-class: #dda2f6;
-  --sh-entity: #85b1e0;
-  --sh-property: #dda2f6;
-  --sh-sign: #b9bed5;
-  --sh-string: #9aefea;
-  --sh-jsxliterals: #b9bed5;
-  --sh-comment: #555c77;
-  --sh-keyword: #7e7edd;
-  --sh-identifier: #85b1e0;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-}
-
-.max-w-144 {
-  max-width: 36rem;
-}
-
-.ls-xs {
-  letter-spacing: -0.05em;
-}
-
-.ls-sm {
-  letter-spacing: -0.05em;
-}
-
-.tw-b {
-  text-wrap: balance;
-}
-
-.va-m {
-  vertical-align: middle;
-}
-
-.n\:ml-8 {
-  margin-left: -8px;
-}
-
-.spr-6 {
-  scroll-padding-right: 1.5rem;
-}
+@import "/app/custom.css";
 
 html {
   min-width: 360px;
+  color: light-dark(#000, #fff);
+}
+
+.title {
+  text-wrap: balance;
 }

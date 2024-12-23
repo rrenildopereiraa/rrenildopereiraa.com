@@ -1,0 +1,8 @@
+.max-w-wide {
+    max-width: 640px;
+}
+
+.antialiased {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}

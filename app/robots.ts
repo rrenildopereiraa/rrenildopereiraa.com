@@ -1,12 +1,12 @@
-import { baseUrl } from 'app/sitemap'
+import { metaData } from "./config";
 
 export default function robots() {
   return {
     rules: [
       {
-        userAgent: '*',
+        userAgent: "*",
       },
     ],
-    sitemap: `${baseUrl}/sitemap.xml`,
-  }
+    sitemap: `${metaData.baseUrl}/sitemap.xml`,
+  };
 }

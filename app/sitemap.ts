@@ -1,17 +1,16 @@
-import { getBlogPosts } from 'app/blog/utils'
+import { MetadataRoute } from "next";
+import { metaData } from "./config";
 
-export const baseUrl = 'https://rrenildopereiraa.vercel.app'
+const BaseUrl = metaData.baseUrl.endsWith("/")
+  ? metaData.baseUrl
+  : `${metaData.baseUrl}/`;
 
-export default async function sitemap() {
-  let blogs = getBlogPosts().map((post) => ({
-    url: `${baseUrl}/blog/${post.slug}`,
-    lastModified: post.metadata.publishedAt,
-  }))
+export default async function sitemap(): Promise<MetadataRoute.Sitemap> {
 
-  let routes = ['', '/blog'].map((route) => ({
-    url: `${baseUrl}${route}`,
-    lastModified: new Date().toISOString().split('T')[0],
-  }))
+  let routes = ["", "projects"].map((route) => ({
+    url: `${BaseUrl}${route}`,
+    lastModified: new Date().toISOString().split("T")[0],
+  }));
 
-  return [...routes, ...blogs]
+  return [...routes];
 }

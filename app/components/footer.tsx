@@ -1,71 +1,51 @@
+"use client";
+
 import React from "react";
-import { GitHubIcon, TwitterIcon, RssIcon } from "./icons";
+import { FaXTwitter, FaGithub, FaInstagram, FaRss, FaLinkedinIn } from "react-icons/fa6";
+import { TbMailFilled } from "react-icons/tb";
+import { metaData, socialLinks } from "app/config";
+
+const YEAR = new Date().getFullYear();
+
+function SocialLink({ href, icon: Icon }) {
+  return (
+    <a href={href} target="_blank" rel="noopener noreferrer">
+      <Icon />
+    </a>
+  );
+}
+
+function SocialLinks() {
+  return (
+    <div className="d-f text-lg g-4 flo-r transition-opacity duration-300 h:o-90">
+      <SocialLink href={socialLinks.twitter} icon={FaXTwitter} />
+      <SocialLink href={socialLinks.github} icon={FaGithub} />
+      <SocialLink href={socialLinks.instagram} icon={FaInstagram} />
+      <SocialLink href={socialLinks.linkedin} icon={FaLinkedinIn} />
+      <SocialLink href={socialLinks.email} icon={TbMailFilled} />
+      <a href="/rss.xml" target="_self">
+        <FaRss />
+      </a>
+    </div>
+  );
+}
 
 export default function Footer() {
   return (
-    <footer className="mb-16">
-      <ul className="fs-sm mt-8 d-f fd-c s-x-0 tc-lead md:fd-r md:s-x-4">
-        <li>
-          <a
-            className="d-f ai-c h:tc-indigo"
-            href="https://twitter.com/rrenildoo"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <TwitterIcon className="dim-5" />
-            <p className="ml-2 h-7">Twitter</p>
-          </a>
-        </li>
-        <li>
-          <a
-            className="d-f ai-c h:tc-indigo"
-            href="https://github.com/rrenildopereiraa"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <GitHubIcon className="dim-5" />
-            <p className="ml-2 h-7">GitHub</p>
-          </a>
-        </li>
-        <li>
-          <a
-            className="d-f ai-c h:tc-indigo"
-            href="/rss"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <RssIcon className="dim-5" />
-            <p className="ml-2 h-7">RSS</p>
-          </a>
-        </li>
-      </ul>
-      <div className="mt-8 tc-lead">
-        <p>
-          Built with{" "}
-          <span>
-            <a
-              className="h:tc-indigo tdl-u"
-              href="https://www.yummacss.com/docs/installation"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Yumma CSS
-            </a>
-          </span>{" "}
-          and{" "}
-          <span>
-            <a
-              className="h:tc-indigo tdl-u"
-              href="https://nextjs.org/docs/getting-started/installation"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Next.js
-            </a>
-          </span>
-          .
-        </p>
-      </div>
-    </footer>
+    <small className="d-b lg:mt-24 mt-16 text-[#1C1C1C] d:text-[#D4D4D4]">
+      <time>© {YEAR}</time>{" "}
+      <a className="no-underline" href={socialLinks.twitter} target="_blank" rel="noopener noreferrer">
+        {metaData.title}
+      </a>
+      <style jsx>{`
+        @media screen and (max-width: 480px) {
+          article {
+            padding-top: 2rem;
+            padding-bottom: 4rem;
+          }
+        }
+      `}</style>
+      <SocialLinks />
+    </small>
   );
 }
