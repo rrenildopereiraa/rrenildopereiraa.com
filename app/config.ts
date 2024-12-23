@@ -9,5 +9,7 @@ export const metaData = {
 export const socialLinks = {
   twitter: "https://x.com/rrenildoo",
   github: "https://github.com/rrenildopereiraa",
+  instagram: "https://www.instagram.com/rrenildopereiraa",
   linkedin: "https://www.linkedin.com/in/rrenildopereiraa/",
+  email: "mailto:rrenildopereiraa@gmail.com",
 };
