@@ -37,7 +37,7 @@ export default function Page() {
         </p>
         <p>
           In my spare time, I like to go for walks in nature with friends and also be a piano{" "}
-          <a href="instrumental artisthttps://music.apple.com/pt/artist/renildo-pereira/1747299923" target="_blank" rel="noopener noreferrer">
+          <a href="https://renildopereira.bandcamp.com/" target="_blank" rel="noopener noreferrer">
             instrumental artist
           </a>
           .
