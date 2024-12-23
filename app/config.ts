@@ -1,5 +1,5 @@
 export const metaData = {
-  baseUrl: "https://Renildo-template.vercel.app/",
+  baseUrl: "https://renildo.vercel.app/",
   title: "Renildo",
   name: "Renildo",
   ogImage: "/og.png",
