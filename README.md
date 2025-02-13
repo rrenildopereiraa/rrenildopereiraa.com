@@ -1,6 +1,6 @@
 <h3>Hello 👋🏽, my name's Renildo.</h3>
 
-I'm the creator of [Yumma CSS](https://www.yummacss.com/)! 🖌️
+Creator of [Yumma CSS](https://www.yummacss.com/) 🖌️
 
 - 🔭 I’m currently working on [yummacss.com](https://www.yummacss.com/)
 
