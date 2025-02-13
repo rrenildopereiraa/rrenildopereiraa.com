@@ -33,7 +33,7 @@ export default function Page() {
           <a href="https://play.yummacss.com/" target="_blank" rel="noopener noreferrer">
             playground
           </a>{" "}
-          for Yumma CSS .
+          for Yumma CSS.
         </p>
         <p>
           In my spare time, I like to go for walks in nature with friends and also be a piano{" "}
