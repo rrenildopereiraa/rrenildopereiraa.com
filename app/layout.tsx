@@ -43,22 +43,50 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: "/favicon.ico",
+    apple: "/apple-icon.png",
   },
 };
 
 const cx = (...classes) => classes.filter(Boolean).join(" ");
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en" className={cx(GeistSans.variable, GeistMono.variable)}>
       <head>
-        <link rel="alternate" type="application/rss+xml" href="/rss.xml" title="RSS Feed" />
-        <link rel="alternate" type="application/atom+xml" href="/atom.xml" title="Atom Feed" />
-        <link rel="alternate" type="application/feed+json" href="/feed.json" title="JSON Feed" />
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/yumma-lib/yumma-css@release/dist/yumma.min.css" />
+        <link
+          rel="alternate"
+          type="application/rss+xml"
+          href="/rss.xml"
+          title="RSS Feed"
+        />
+        <link
+          rel="alternate"
+          type="application/atom+xml"
+          href="/atom.xml"
+          title="Atom Feed"
+        />
+        <link
+          rel="alternate"
+          type="application/feed+json"
+          href="/feed.json"
+          title="JSON Feed"
+        />
+        <link
+          rel="stylesheet"
+          href="https://cdn.jsdelivr.net/gh/yumma-lib/yumma-css@release/dist/yumma.min.css"
+        />
       </head>
       <body className="antialiased d-f fd-c ai-c jc-c mx-auto mt-2 lg:mt-8 mb-20 lg:mb-40">
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem disableTransitionOnChange>
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
           <main className="f-auto min-w-0 mt-2 md:mt-6 d-f fd-c px-6 sm:px-4 md:px-0 max-w-wide w-full">
             <Navbar />
             {children}
